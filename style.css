@@ -60,7 +60,9 @@ Header: Proxima Nova*/
   float: left;
   padding: 5px;
   font-family: 'Montserrat';
+  /* font-size: 15px; */
   font-size: 15px;
+
 }
 .imagesection{
   max-width: 100%;
@@ -81,9 +83,6 @@ section {
 
   /* justify-content: center;
   align-items: center; */
-}
-.stats{
-  height: 33vh;
 }
 .verticalcontainer {
   margin: auto;
