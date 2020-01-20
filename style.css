@@ -57,7 +57,6 @@ Header: Proxima Nova*/
   background-color: rgba(221, 221, 221, 0);
 }
 .description {
-  height: 33vh;
   float: left;
   padding: 5px;
   font-family: 'Montserrat';
@@ -114,8 +113,6 @@ section:nth-child(7) {
 .nav__wrapper {
   margin: auto;
   position: fixed;
-  top: 50%;
-  transform: translate(0%, -50%);
   width: 45%;
   padding: 30px;
   display: flex;
