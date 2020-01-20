@@ -57,12 +57,15 @@ Header: Proxima Nova*/
   background-color: rgba(221, 221, 221, 0);
 }
 .description {
+  height: 33vh;
   float: left;
   padding: 5px;
   font-family: 'Montserrat';
   font-size: 15px;
 }
 .imagesection{
+  max-width: 100%;
+  max-height: 100%;
   width: 65%;
   display: block;
   margin-left: auto;
@@ -76,8 +79,16 @@ section {
   font-weight: 100;
   background-color: #FFC220;
   display: flex;
+
   /* justify-content: center;
   align-items: center; */
+}
+.stats{
+  height: 33vh;
+}
+.verticalcontainer {
+  margin: auto;
+  width: 50%;
 }
 section:nth-child(1) {
   background: white;
@@ -101,7 +112,10 @@ section:nth-child(7) {
   background: #90ADC4;
 }
 .nav__wrapper {
+  margin: auto;
   position: fixed;
+  top: 50%;
+  transform: translate(0%, -50%);
   width: 45%;
   padding: 30px;
   display: flex;
@@ -205,12 +219,8 @@ section:nth-child(7) {
     font-size: 20px;
   }
   .nav__wrapper {
-    position: fixed;
     width: 45%;
     padding: 5px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
 }
 .nav li.active .nav__body {
   height: 0px;
