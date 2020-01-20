@@ -9,9 +9,11 @@ Header: Proxima Nova*/
   box-sizing: border-box;
 }
 .title{
+  margin-top: 10px;
+  margin-bottom: 0px;
   font-size: 20px;
   font-family: 'Poppins', serif;
-  font-weight: bold;
+  font-weight: 900;
   color: black;
 }
 .wrapper {
@@ -39,32 +41,33 @@ Header: Proxima Nova*/
   /* border: 1px solid red; */
 }
 
-.duration {width: 20%; height: 40px; background-color: #2196F3;}
-.risk {width: 90%; height: 40px;background-color: #2196F3;}
-.investment {width: 5%; height: 40px; background-color: #2196F3;}
+
+.duration {width: 20%; height: 40px; background-color: white;}
+.risk {width: 90%; height: 40px;background-color: white;}
+.investment {width: 5%; height: 40px; background-color: white;}
 
 
 .bar {
   font-size: 50%;
   padding: 10px;
   text-align: right;
-  color: white;
 }
 .barcontainer {
   width: 100%;
-  background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0);
 }
 .description {
   float: left;
-  padding: 10px;
+  padding: 5px;
   font-family: 'Montserrat';
-  font-size: 1vw;
+  font-size: 15px;
 }
 .imagesection{
-  width: 50%;
+  width: 65%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 0%;
 
 }
 
@@ -186,4 +189,40 @@ section:nth-child(7) {
   height: 100px;
   opacity: 1;
   overflow: visible;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .nav__counter {
+    font-size: 20px;
+  }
+  .nav li.active .nav__counter {
+    font-size: 40px;
+  }
+  .nav__title {
+    font-size: 30px;
+  }
+  .nav__wrapper {
+    position: fixed;
+    height: 100%;
+    width: 45%;
+    padding: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+.nav li.active .nav__body {
+  height: 0px;
+}
+.description {
+  font-size: 15px;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
 }
