@@ -5,24 +5,77 @@
 FFFFFF 
 Title: Poppins
 Header: Proxima Nova*/
-
+* {
+  box-sizing: border-box;
+}
+.title{
+  font-size: 20px;
+  font-family: 'Poppins', serif;
+  font-weight: bold;
+  color: black;
+}
 .wrapper {
   min-height: 100vh;
   font-family: 'Poppins', serif;
   font-weight: bold;
-  /* font-weight: 300; */
-  color: #fff;
+  color: black;
   position: relative;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /* border: 1px solid red; */
+}
+
+.duration {width: 20%; height: 40px; background-color: #2196F3;}
+.risk {width: 90%; height: 40px;background-color: #2196F3;}
+.investment {width: 5%; height: 40px; background-color: #2196F3;}
+
+
+.bar {
+  font-size: 50%;
+  padding: 10px;
+  text-align: right;
+  color: white;
+}
+.barcontainer {
+  width: 100%;
+  background-color: #ddd;
+}
+.description {
+  float: left;
+  padding: 10px;
+  font-family: 'Montserrat';
+  font-size: 1vw;
+}
+.imagesection{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 section {
   height: 100vh;
   font-size: 40px;
   font-weight: 100;
-  background-color: #22A7F0;
+  background-color: #FFC220;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 section:nth-child(1) {
   background: white;
@@ -34,21 +87,21 @@ section:nth-child(3) {
   background: #90ADC4;
 }
 section:nth-child(4) {
-  background: #000000;
-}
-section:nth-child(5) {
   background: #FFC220;
 }
-section:nth-child(6) {
+section:nth-child(5) {
   background: #90ADC4;
 }
-section:nth-child(7) {
-  background: #000000;
+section:nth-child(6) {
+  background: #FFC220;
 }
-
+section:nth-child(7) {
+  background: #90ADC4;
+}
 .nav__wrapper {
   position: fixed;
   height: 100%;
+  width: 45%;
   padding: 30px;
   display: flex;
   flex-flow: column nowrap;
@@ -58,6 +111,7 @@ section:nth-child(7) {
   margin: 0 0 100px 30px;
 }
 .nav__counter {
+  /* color: rgb(0, 0, 0); */
   font-size: 24px;
   transition: all 0.15s ease-out;
 }
@@ -75,7 +129,7 @@ section:nth-child(7) {
   font-weight: 100;
   font-size: 18px;
   font-size: 18px;
-  width: 300px;
+  width: 100%;
   height: 0;
   overflow: hidden;
   opacity: 0;
@@ -89,8 +143,8 @@ section:nth-child(7) {
 .nav li:after {
   content: '';
   display: block;
-  border-left: 2px solid white;
-  border-top: 2px solid white;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
   height: 250px;
   width: 20px;
   position: absolute;
@@ -100,7 +154,7 @@ section:nth-child(7) {
 .nav li a {
   display: block;
   padding: 0;
-  color: #fff;
+  color: black;
   transition: all 0.15s ease-out;
 }
 .nav li a:hover {
@@ -120,6 +174,7 @@ section:nth-child(7) {
   top: 35px;
 }
 .nav li.active .nav__counter {
+  color: rgb(255, 255, 255);
   font-size: 48px;
 }
 .nav li.active .nav__title {
