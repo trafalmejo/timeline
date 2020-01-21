@@ -277,11 +277,11 @@ section:nth-child(7) {
 }
 .nav li.active .nav__counter.yellow{
   color: #FFC220;
-  font-size: 48px;
+  font-size: 4vw;
 }
 .nav li.active .nav__counter.black{
   color: black;
-  font-size: 48px;
+  font-size: 4vw;
 }
 .nav li.active .nav__title {
   height: 40px;
@@ -303,8 +303,11 @@ section:nth-child(7) {
   .nav__counter {
     font-size: 20px;
   }
-  .nav li.active .nav__counter {
-    font-size: 30px;
+  .nav li.active .nav__counter.yellow {
+    font-size: 5vw;
+  }
+  .nav li.active .nav__counter.black {
+    font-size: 5vw;
   }
   .nav__title {
     font-size: 20px;
@@ -341,8 +344,11 @@ section:nth-child(7) {
   .nav__counter {
     font-size: 10px;
   }
-  .nav li.active .nav__counter {
-    font-size: 15px;
+  .nav li.active .nav__counter.yellow {
+    font-size: 7vw;
+  }
+  .nav li.active .nav__counter.black {
+    font-size: 7vw;
   }
   .nav__title {
     font-size: 10px;
