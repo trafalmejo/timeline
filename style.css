@@ -133,7 +133,7 @@ to {
 }
 .description {
   float: left;
-  padding: 5px;
+  padding-top: 5px;
   font-family: 'Montserrat';
   /* font-size: 15px; */
   font-size: 1vw;
@@ -173,7 +173,7 @@ span.step {
   color: white;
   border-radius: 50%;
   line-height: 0.6em;
-  display: block;
+  display: inline-block;
   text-align: center;
   font-family: 'Poppins', serif;
 
@@ -209,6 +209,7 @@ section:nth-child(7) {
   justify-content: flex-end;
 }
 .nav {
+  /* max-height: 80vh; */
   margin: 0 0 100px 30px;
 }
 .nav__counter {
@@ -242,7 +243,7 @@ section:nth-child(7) {
 .nav li {
   position: relative;
   transition: all 0.3s ease-out;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 .nav li:after {
   content: '';
@@ -278,10 +279,12 @@ section:nth-child(7) {
   top: 35px;
 }
 .nav li.active .nav__counter.yellow{
+  display: block;
   color: #FFC220;
   font-size: 3vw;
 }
 .nav li.active .nav__counter.black{
+  display: block;
   color: black;
   font-size: 3vw;
 }
@@ -302,17 +305,20 @@ section:nth-child(7) {
     width: 100%;
     padding: 2px 10px;
   }
+  .nav li {
+    margin-bottom: .7em;
+  }
   .nav__counter {
-    font-size: 20px;
+    font-size: 1.5vw;
   }
   .nav li.active .nav__counter.yellow {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .nav li.active .nav__counter.black {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .nav__title {
-    font-size: 20px;
+    font-size: 1.5vw;
   }
   .nav__wrapper {
     width: 45%;
@@ -322,7 +328,7 @@ section:nth-child(7) {
   height: 0px;
 }
 .description {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
 }
 [class*="col-"] {
   float: left;
@@ -334,7 +340,7 @@ section:nth-child(7) {
   font-size: 15px;
 }
 }
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 768px) {
   [class*="col-"] {
     float: left;
     padding: 2px 10px;
