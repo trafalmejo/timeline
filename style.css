@@ -121,6 +121,8 @@ to {
   -webkit-animation: progressinv 3s ease-in-out forwards;
 }
 .bar {
+  height: 20%; 
+  background-color: white;
   font-size: 50%;
   padding: 1vh;
   text-align: right;
